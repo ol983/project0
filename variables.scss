@@ -1,0 +1,90 @@
+/*****************************************************************************
+
+OTHA LEWIS Project0 CS50
+
+*****************************************************************************/
+@media (min-width: 500px){
+  h1.ole_h1_p1::before{
+    content: "CS50 Project 0: Otha Lewis - Index page 1";
+  }
+}
+@media (max-width: 499px){
+  h1.ole_h1_p1::before {
+    content: "Page 1";
+  }
+}
+@media (min-width: 500px){
+  h1.ole_h1_p2::before{
+    content: "CS50 Project 0: Otha Lewis - Page 2";
+  }
+}
+@media (max-width: 499px){
+  h1.ole_h1_p2::before {
+    content: "Page 2";
+  }
+}
+@media (min-width: 500px){
+  h1.ole_h1_p3::before{
+    content: "CS50 Project 0: Otha Lewis - Page 3";
+  }
+}
+@media (max-width: 499px){
+  h1.ole_h1_p3::before {
+    content: "Page 3";
+  }
+}
+@media (min-width: 500px){
+  h1.ole_h1_p4::before{
+    content: "CS50 Project 0: Otha Lewis - Page 4";
+  }
+}
+@media (max-width: 499px){
+  h1.ole_h1_p4::before{
+    content: "Page 4";
+  }
+}
+/* SCSS Inheritance*/
+%ahto{
+  font-weight: bold;
+}
+.row > div {
+  @extend %ahto;
+  padding: 20px;
+  background: blue;
+  color: white;
+  border: 2px solid black;
+}
+/* SCSS Variable and Inheritance*/
+$color: green;
+a.ole_hvr_p1:hover{
+  @extend %ahto;
+  background: $color;
+  color: white;
+}
+/* SCSS Nesting*/
+div.ole_div_p4{
+              font-weight: bold;
+              h3{
+                color: red;
+              }
+              ul{
+                color: blue;
+              }
+}
+/* SCSS Inheritance*/
+h2.Appl::after{
+  content: " - Caution: Hostile Work Environment";
+  @extend %ahto;
+  color: red;
+  font-size: 12px;
+}
+ol.ndx{
+	list-style: lower-alpha;
+}
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+ul.toc{
+  list-style:none;
+}
