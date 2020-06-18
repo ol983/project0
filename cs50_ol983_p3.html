@@ -4,22 +4,7 @@
 		<title>CS50 Project 0: Otha Lewis - Page 4</title>
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<style>
-			table.center {
-				margin-left: auto;
-				margin-right: auto;
-			}
-			@media (min-width: 500px){
-				h1::before{
-					content: "CS50 Project 0: Otha Lewis - Page 4";
-				}
-			}
-			@media (max-width: 499px){
-				h1::before{
-					content: "Page 4";
-				}
-			}
-		</style>
+		<link rel="stylesheet" href="variables.css">
 		<script type ="text/javascript">
 		function go2Index() {
 			window.history.go(-((window.history.length)-1));
@@ -31,13 +16,13 @@
 	</head>
 	<body>
 		<div class="alert alert-danger" role="alert">
-			<h1></h1>
+			<h1 class="ole_h1_p4"></h1>
 		</div>
 		<div class="container">
 		<h3 id="PEI"><p><b>PROFESSIONAL EXPERIENCE INDEX</b></p></h3>
 			<p><button onclick="goBack()">Click to Return to the Previous Page</button></p>
 		  <p><button onclick="go2Index()">Click to Return to the Index Page</button></p>
-		<ul>
+		<ol class="ndx">
 			<li><a href="cs50_ol983_p1.html">Applications Engineer</a>
 				 | TABLE MOUNTAIN CASINO PAGE 2</li>
 			<li><a href="cs50_ol983_p2.html">Data Scientist</a>
@@ -52,8 +37,9 @@
 				 | NETFILE  PAGE 4</li>
 			<li><a href="cs50_ol983_p3.html#Expertise">Expertise</a>
 				 | PAGE 4</li>
-	  </ul>
-		  <p><h3 id="Car"><b>AGENCY RENT-A-CAR: Branch Manager</b></h3>
+	  </ol>
+		<div class="ole_div_p4">
+		  <p class="ole_div_p4"><h3 id="Car"><b>AGENCY RENT-A-CAR: Branch Manager</b></h3>
        Instrumental in complete turnaround of underperforming central valley
 			 branch to one of the top performing outlets within the region with more
 			 than 450% revenue increase.</p>
@@ -82,6 +68,7 @@
 				<li>Adjustors Association (CCAA) and California Autobody Association
 					  (CAA).</li>
 			</ul></p>
+		</div>
 
 			<p><b><a href="#PEI">Back to top</a></b></p>
 
